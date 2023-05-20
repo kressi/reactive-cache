@@ -40,4 +40,3 @@ Create reactive cache with contextual values.
 KeyGenerator<SimpleKey> keyGenerator = new KeyGenerator(contextView -> contextView.get("language"));
 ReactiveCache<SimpleKey, ValueClass> valueCache = ReactiveCache.from(caffeine.build(), keyGenerator);
 ```
-
